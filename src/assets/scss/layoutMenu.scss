@@ -1,0 +1,47 @@
+%commonLabel {
+  position: relative;
+  top: 0.6em;
+  bottom: 0.6px;
+}
+
+.labelLanguage,
+.askNotify,
+.reStartBtn {
+  @extend %commonLabel;
+}
+
+.labelLoginName {
+  @extend %commonLabel;
+  right: 0px;
+}
+
+%commonTopLabel {
+  position: relative;
+  top: 0.4em;
+}
+
+.selectLanguage,
+.btnLogin,
+.reLoad {
+  @extend %commonTopLabel;
+}
+
+.themeMode {
+  position: relative;
+  top: 1em;
+}
+
+.labelTime {
+  @extend %commonTopLabel;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.vaw-layout-container {
+  height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  .mobile-shadow {
+    display: none;
+  }
+}
