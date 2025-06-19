@@ -37,7 +37,7 @@ jobs:
     if: github.ref == 'refs/heads/main'
 
     steps:
-      - name: Download Artifact
+      - name: Download All Artifacts
         uses: actions/download-artifact@v4
         with:
           name: production-files
