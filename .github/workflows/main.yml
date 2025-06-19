@@ -37,7 +37,7 @@ jobs:
     if: github.ref == 'refs/heads/main'
 
     steps:
-      - name: Download All Artifacts
+      - name: Download Artifact
         uses: actions/download-artifact@v4
         with:
           name: production-files
@@ -48,7 +48,7 @@ jobs:
         # If you're changing the branch from main,
         # also change the `main` in `refs/heads/main`
         # below accordingly.
-        if: github.ref == 'refs/heads/main'
+
         with:
           # 這裡的金鑰使用公開金鑰，須小心安全性的問題
           github_token: ${{ secrets.GITHUB_TOKEN }}
